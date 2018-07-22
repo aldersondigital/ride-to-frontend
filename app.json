@@ -1,0 +1,6 @@
+{
+  "name": "ride-to-product-test-frontend",
+  "description": "A Ride To frontend React test framework with products to be deployed via Heroku",
+  "keywords": ["node", "express", "react", "heroku"],
+  "image": "heroku/nodejs"
+}
