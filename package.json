@@ -35,7 +35,8 @@
     "lint": "./node_modules/.bin/eslint ./src/**",
     "test": "./node_modules/.bin/react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "build": "./node_modules/.bin/react-scripts build",
-    "run": "./node_modules/.bin/react-scripts start",
+    "dev-run": "./node_modules/.bin/react-scripts start",
+    "run": "nodejs ./index.js",
     "quit": "./node_module/.bin/react-scripts eject"
   }
 }
