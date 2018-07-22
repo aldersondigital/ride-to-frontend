@@ -6,6 +6,6 @@ const cons = require('consolidate');
 express()
    .use(express.static(path.join(__dirname, 'build')))
    .get('/', function (req, res) {
-      res.sendFile(path.join(__dirname, 'build', 'index.html'));
+      res.sendFile(path.join(__dirname, 'app', 'build', 'index.html'));
    })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
