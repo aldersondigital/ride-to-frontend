@@ -17,6 +17,7 @@
 
 This package contains a small responsive [React](https://reactjs.org/) / [Redux](https://redux.js.org/) solution to the [RideTo](https://www.rideto.com/) 'products' coding assignment.
 
+The deployed version is available at the following temporary Heroku address: [https://immense-brushlands-94453.herokuapp.com](https://immense-brushlands-94453.herokuapp.com)
 
 ---
 
