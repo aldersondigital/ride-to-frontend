@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
-const PORT = process.env.PORT || 39332
+const PORT = process.env.PORT
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
-  .get('/', (req, res) => res.render('src/index'))
+  .get('/', (req, res) => res.render('build/index.html'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
