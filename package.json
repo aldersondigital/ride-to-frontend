@@ -32,11 +32,10 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ./src/**",
-    "test": "./node_modules/.bin/react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
+    "lint":  "./node_modules/.bin/eslint ./src/**",
+    "test":  "./node_modules/.bin/react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "build": "./node_modules/.bin/react-scripts build",
-    "start-dev": "node ./server.dev.js",
-    "start": "node ./server.heroku.js",
-    "quit": "./node_module/.bin/react-scripts eject"
+    "run":   "nodejs ./server.js",
+    "quit":  "./node_module/.bin/react-scripts eject"
   }
 }
