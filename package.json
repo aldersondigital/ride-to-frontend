@@ -4,11 +4,14 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^1.4.1",
     "consolidate": "^0.15.1",
     "express": "4.16.3",
+    "install": "^0.12.1",
     "jquery": "^3.2.1",
-    "material-ui": "^1.0.0-beta.22",
+    "material-ui": "^0.20.1",
     "material-ui-icons": "^1.0.0-beta.17",
+    "npm": "^6.2.0",
     "prop-types": "^15.6.0",
     "raf": "^3.4.0",
     "react": "^16.1.1",
@@ -32,10 +35,10 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "lint":  "./node_modules/.bin/eslint ./src/**",
-    "test":  "./node_modules/.bin/react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
+    "lint": "./node_modules/.bin/eslint ./src/**",
+    "test": "./node_modules/.bin/react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "build": "./node_modules/.bin/react-scripts build",
-    "run":   "nodejs ./server.js",
-    "quit":  "./node_module/.bin/react-scripts eject"
+    "run": "nodejs ./server.js",
+    "quit": "./node_module/.bin/react-scripts eject"
   }
 }

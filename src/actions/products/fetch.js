@@ -2,23 +2,26 @@ import $ from 'jquery';
 import error from './error';
 import populate from './populate';
 import loading from './loading';
+import config from '../../config';
+
+const API_MODEL_NAME = 'products';
 
 const fetch = () => (dispatch) => {
   dispatch(loading(true));
 
   $.get({
-    url: 'https://quiet-brushlands-87332.herokuapp.com/bucketlists/?format=json',
-    headers: {
-      'x-api-version': 2,
-      accept: 'application/json'
-    }
+    url: config.ROOT_API_URL + API_MODEL_NAME + '/?format=json',
+    type: 'GET',
+    dataType: "json",
   })
     .then((response) => {
       dispatch(loading(false));
       return response;
     })
     .then(data => dispatch(populate(data)))
-    .catch(() => dispatch(error(true)));
+    .catch((e) => {
+      dispatch(error(true));
+    })
 };
 
 export default fetch;

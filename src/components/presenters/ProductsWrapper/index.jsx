@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Divider from 'material-ui/Divider';
-import Grid from 'material-ui/Grid';
-import Typography from 'material-ui/Typography';
+import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import ProductsContainer from '../../containers/Products';
 import ProductsFilterContainer from '../../containers/ProductsFilter';
 import './styles.css';
 
 class ProductsWrapper extends React.Component {
-
-  componentWillMount() {
+  constructor(props) {
+    super(props);
     this.props.fetchProducts();
   }
 

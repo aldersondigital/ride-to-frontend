@@ -1,12 +1,14 @@
 import { connect } from 'react-redux';
 import { fetch } from '../../../actions/products';
-import ProductsWrapperPresenter from '../../presenters/Products';
+import ProductsWrapperPresenter from '../../presenters/ProductsWrapper';
 
-const mapDispatchToProps = dispatch => ({
-  fetchProducts: () => {
-    dispatch(fetch());
-  }
-});
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchProducts: () => {
+      dispatch(fetch());
+    }
+  };
+}
 
 export default connect(
   null,
