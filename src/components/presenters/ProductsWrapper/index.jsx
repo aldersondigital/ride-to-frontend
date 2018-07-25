@@ -38,7 +38,7 @@ class ProductsWrapper extends React.Component {
                   <ProductsFilterContainer />
                 </Paper>
 	            </Grid>
-      	      <Grid item xs={8}>
+      	      <Grid item xs={9}>
                 <Paper className="ProductsWrapper-products-container">
                   <ProductsContainer />
                 </Paper>
