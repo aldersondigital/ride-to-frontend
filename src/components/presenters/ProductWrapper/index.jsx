@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import ProductContainer from "../../containers/Product";
 import ProductRelatedContainer from "../../containers/ProductRelated";
+import styles from './styles.css';
 
 class ProductWrapper extends React.Component {
   

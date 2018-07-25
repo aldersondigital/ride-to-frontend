@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
+import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
+import ListSubheader from '@material-ui/core/ListSubheader';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
+import styles from './styles.css';
 
 class ProductRelated extends React.Component {
 
@@ -14,7 +16,10 @@ class ProductRelated extends React.Component {
 
     return (
       <section className="ProductRelated">
-        <List component="nav">
+        <List 
+          component="nav" 
+          subheader={ <ListSubheader component="div">Related products</ListSubheader> } 
+        >
           {this.props.products.map((product, index) => {
             return (
               <ListItem button key={ index }>
