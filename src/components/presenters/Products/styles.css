@@ -1,3 +1,13 @@
 section.Products {
   margin-top: 10px !important;
 }
+
+section.Products table.Products-table thead tr td {
+  width: 5vw !important;
+  text-align: left !important;
+}
+
+section.Products table.Products-table tbody tr td {
+  width: 5vw !important;
+  text-align: left !important;
+}
