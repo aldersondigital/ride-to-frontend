@@ -50,7 +50,9 @@ class Product extends React.Component {
               </TableRow>
               <TableRow>
                 <TableCell>Link</TableCell>
-                <TableCell>{ this.props.product.link }</TableCell>
+                <TableCell>
+                  <a href={ this.props.product.link }>{ this.props.product.link }</a>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>Image</TableCell>

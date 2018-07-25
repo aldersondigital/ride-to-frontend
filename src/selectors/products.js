@@ -14,11 +14,9 @@ export const filterProducts = (products, productsFilterType) => {
   switch (productsFilterType) {
 
   case PRODUCTS_FILTER_FILM:
-    console.log('FILM SELECTED');
     return products.filter((product) => parseInt(product.category, BASE_TEN) === parseInt(CATEGORY_FILM_ID, BASE_TEN));
 
   case PRODUCTS_FILTER_WEB:
-    console.log('WEB SELECTED');
     return products.filter((product) => parseInt(product.category, BASE_TEN) === parseInt(CATEGORY_WEB_ID, BASE_TEN));
 
   default:

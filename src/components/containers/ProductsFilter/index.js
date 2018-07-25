@@ -5,8 +5,6 @@ import ProductsFilterPresenter from '../../presenters/ProductsFilter';
 const mapDispatchToProps = (dispatch) => {
   return {
     setProductsFilter: (productsFilter = false) => {
-      console.log('set products filter');
-      console.log(productsFilter);
       dispatch(set(productsFilter));
     }
   };
