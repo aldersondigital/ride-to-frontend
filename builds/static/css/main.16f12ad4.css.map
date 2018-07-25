@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/presenters/AppFooter/styles.css"],"names":[],"mappings":"AAAA,WACE,eAAiB","file":"static/css/main.16f12ad4.css","sourcesContent":[".AppFooter {\n  padding-top: 2vh;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/components/presenters/AppFooter/styles.css"],"sourceRoot":""}

@@ -1,24 +1,27 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
-import IconButton from 'material-ui/IconButton';
-import MenuIcon from 'material-ui-icons/Menu';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import './styles.css';
+import { withStyles } from '@material-ui/core/styles';
 
-export default () => {
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+};
+
+const AppHeader = () => {
   return (
-    <section className="AppHeader">
-       <AppBar position="static">
+    <div className="AppHeader">
+       <AppBar position="static" color="default">
          <Toolbar>
-          <IconButton className="AppHeader-button" color="contrast" aria-label="Menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography type="title" color="inherit" className="AppHeader-title">
-            RideTo Product Test
+          <Typography type="title" color="default" className="AppHeader-title">
+            RideTo: Test solution by Joe Strachan
           </Typography>
         </Toolbar>
        </AppBar>
-    </section>
+    </div>
   );
 };
+
+export default withStyles(styles)(AppHeader);
