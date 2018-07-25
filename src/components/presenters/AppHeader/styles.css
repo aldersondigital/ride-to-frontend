@@ -1,0 +1,15 @@
+div.AppHeader {
+  background-color: #1E90FF !important;
+}
+
+div.AppHeadr-app-bar button {
+  display: none !important;
+}
+
+div.AppHeadr-app-bar h1 {
+  max-width: 1px !important;
+}
+
+p.AppHeader-title {
+  line-height: 4.5em;
+}

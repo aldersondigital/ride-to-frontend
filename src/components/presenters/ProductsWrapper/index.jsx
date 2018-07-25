@@ -7,7 +7,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import ProductsContainer from '../../containers/Products';
 import ProductsFilterContainer from '../../containers/ProductsFilter';
-
+import styles from './styles.css';
+/*
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -18,6 +19,7 @@ const styles = theme => ({
     color: theme.palette.text.secondary,
   },
 });
+*/
 
 class ProductsWrapper extends React.Component {
   constructor(props) {
@@ -54,4 +56,4 @@ ProductsWrapper.propTypes = {
 };
 
 
-export default withStyles(styles)(ProductsWrapper);
+export default ProductsWrapper;

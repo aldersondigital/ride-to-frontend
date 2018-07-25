@@ -1,3 +1,12 @@
-.Home-divider {
-  margin-top: 4vh !important;
+section.ProductsFilter {
+  margin-top: 10px !important;
+}
+
+section.ProductsFilter legend {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+section.ProductsFilter span {
+  padding-left: 10px;
 }

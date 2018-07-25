@@ -1,3 +1,14 @@
-.AppFooter {
-  padding-top: 2vh;
+section.AppFooter {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  background-color: rgb(221, 222, 233) !important;
 }
+
+div.AppFooter-navigation {
+  background-color: rgb(221, 222, 233) !important;
+}
+
+

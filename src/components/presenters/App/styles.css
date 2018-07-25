@@ -1,8 +1,7 @@
-body {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  background-color: #fafafa;
+.Home-divider {
+  margin-top: 4vh !important;
 }
 
-.App {
-  text-align: center;
+body {
+  background-color: #efefef;
 }

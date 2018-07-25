@@ -10,6 +10,7 @@ import AppHeader from '../AppHeader';
 import ProductWrapper from '..//ProductWrapper';
 import ProductsWrapperContainer from '../../containers/ProductsWrapper';
 import store from '../../../store';
+import styles from './styles.css';
 
 const muiTheme = createMuiTheme({
   palette: {
