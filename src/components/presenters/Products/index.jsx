@@ -23,18 +23,20 @@ class Products extends React.Component {
                   <TableCell>Name</TableCell>
                   <TableCell>Description</TableCell>
                   <TableCell>Link</TableCell>
+                  <TableCell>Actions</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
               {this.props.products.map((product, index) => {
                 return (
                   <TableRow key={ index }>
-                    <Link to={ "/product/" + product.id } >
-                      <TableCell>{ product.category }</TableCell>
-                      <TableCell>{ product.name }</TableCell>
-                      <TableCell>{ product.description }</TableCell>
-                      <TableCell>{ product.link }</TableCell>
-                    </Link>
+                    <TableCell>{ product.category }</TableCell>
+                    <TableCell>{ product.name }</TableCell>
+                    <TableCell>{ product.description }</TableCell>
+                    <TableCell>{ product.link }</TableCell>
+                    <TableCell>
+                      <Link to={ "/product/" + product.id } >Further details</Link>
+                    </TableCell>
                   </TableRow>
               )})}
               </TableBody>
