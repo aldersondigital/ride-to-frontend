@@ -8,18 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import ProductsContainer from '../../containers/Products';
 import ProductsFilterContainer from '../../containers/ProductsFilter';
 import styles from './styles.css';
-/*
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing.unit,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-});
-*/
 
 class ProductsWrapper extends React.Component {
   constructor(props) {

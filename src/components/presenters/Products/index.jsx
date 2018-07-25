@@ -30,10 +30,12 @@ class Products extends React.Component {
               {this.props.products.map((product, index) => {
                 return (
                   <TableRow key={ index }>
-                    <TableCell>{ product.category }</TableCell>
+                    <TableCell>{ product.categoryText }</TableCell>
                     <TableCell>{ product.name }</TableCell>
                     <TableCell>{ product.description }</TableCell>
-                    <TableCell>{ product.link }</TableCell>
+                    <TableCell>
+                      <a href={ product.link }>{ product.link }</a>
+                    </TableCell>
                     <TableCell>
                       <Link to={ "/product/" + product.id } >Further details</Link>
                     </TableCell>
