@@ -8,9 +8,6 @@ const mapStateToProps = (state) => {
   return {
     products: filterProductsSelector(state.products.data, state.productsFilter),
     hasProducts: (function() {
-      console.log('HAS PRODUCTS');
-      console.log('state.products');
-      console.log(state);
       return ((state.products.error === false) && (state.products.loading === false) && (Object.keys(state.products.data).length > NO_DATA)); 
     })
   };

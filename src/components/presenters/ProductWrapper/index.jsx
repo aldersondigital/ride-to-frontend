@@ -5,6 +5,7 @@ import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import ProductContainer from "../../containers/Product";
+import ProductRelatedContainer from "../../containers/ProductRelated";
 
 class ProductWrapper extends React.Component {
   
@@ -22,7 +23,7 @@ class ProductWrapper extends React.Component {
               <Grid container className="ProductWrapper-inner-container" justify="left" spacing={12}>
                 <Grid item xs={3}>
                   <Paper className="ProductWrapper-product-related-container">
-                    Related products
+                    <ProductRelatedContainer productId={ this.state.productId } />
                   </Paper>
                 </Grid>
       	        <Grid item xs={9}>
